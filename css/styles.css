@@ -1,0 +1,46 @@
+:root {
+    --color-dark: #343434;
+    --color-light-gray: #818589;
+}
+
+
+nav {
+    background-color: var(--color-dark);
+}
+
+.slider1 {
+    background-image: url("../img/banner-principal.png");
+    min-height: 85vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Filtro oscuro para los sliders */
+.slider1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    min-height: 85vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.slider1 .container {
+    position: relative;
+    z-index: 2;
+}
+
+.slider1 h1, .slider1 p {
+    position: relative;
+    z-index: 3;
+}
+
+input[type="search"], .search:focus {
+    border: none !important;
+    background: transparent;
+    border-bottom: 1px solid #e1e1e1 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
