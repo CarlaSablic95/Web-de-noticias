@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'slide',
         perPage: 1,
         arrows: false,
-        // autoplay: true,
-        // interval: 2000
-        // Más opciones...
+        autoplay: true,
+        interval: 1000,
+        loop: true
     }).mount();
 });
